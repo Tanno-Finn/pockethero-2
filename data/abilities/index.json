@@ -1,0 +1,8 @@
+{
+  "version": "0.1.0",
+  "description": "Ability definitions for MonsterQuest",
+  "entries": [
+    "ember",
+    "water-gun"
+  ]
+}

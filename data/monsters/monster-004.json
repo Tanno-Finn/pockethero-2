@@ -1,0 +1,36 @@
+{
+  "id": "monster-004",
+  "name": "Bubblefin",
+  "type": "water",
+  "description": "A water-dwelling monster with bubble-like fins. It can breathe both in water and on land.",
+  "baseStats": {
+    "hp": 50,
+    "attack": 45,
+    "defense": 55,
+    "specialAttack": 65,
+    "specialDefense": 60,
+    "speed": 40
+  },
+  "abilities": ["bubble", "tackle", "tail-whip", "water-gun", "aqua-jet"],
+  "abilityLevels": {
+    "bubble": 1,
+    "tackle": 1,
+    "tail-whip": 4,
+    "water-gun": 10,
+    "aqua-jet": 18
+  },
+  "evolution": {
+    "evolvesTo": "monster-005",
+    "level": 16,
+    "item": null,
+    "condition": null
+  },
+  "catchRate": 45,
+  "expYield": 62,
+  "growthRate": "medium",
+  "shape": {
+    "form": "circle",
+    "mainColor": 3447003,
+    "accentColor": 1752220
+  }
+}

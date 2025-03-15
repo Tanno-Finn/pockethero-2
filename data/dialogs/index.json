@@ -1,0 +1,7 @@
+{
+  "version": "0.1.0",
+  "description": "Dialog definitions for MonsterQuest",
+  "entries": [
+    "professor-greeting"
+  ]
+}

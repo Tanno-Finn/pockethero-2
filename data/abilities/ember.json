@@ -1,0 +1,32 @@
+{
+  "id": "ember",
+  "name": "Ember",
+  "type": "fire",
+  "category": "special",
+  "description": "The target is attacked with small flames. May cause a burn.",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 25,
+  "target": "opponent",
+  "priority": 0,
+  "effects": [
+    {
+      "type": "status",
+      "target": "target",
+      "status": "burn",
+      "chance": 10,
+      "duration": null
+    }
+  ],
+  "animations": {
+    "color": 16729344,
+    "shape": "burst",
+    "duration": 500,
+    "particleCount": 20
+  },
+  "sound": {
+    "name": "fire",
+    "volume": 0.7,
+    "pitch": 1.0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "water-gun",
+  "name": "Water Gun",
+  "type": "water",
+  "category": "special",
+  "description": "The target is blasted with a forceful shot of water.",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 25,
+  "target": "opponent",
+  "priority": 0,
+  "effects": [],
+  "animations": {
+    "color": 3447003,
+    "shape": "beam",
+    "duration": 600,
+    "particleCount": 15
+  },
+  "sound": {
+    "name": "water",
+    "volume": 0.6,
+    "pitch": 1.2
+  }
+}

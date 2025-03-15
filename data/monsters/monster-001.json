@@ -1,0 +1,36 @@
+{
+  "id": "monster-001",
+  "name": "Embercub",
+  "type": "fire",
+  "description": "A small fire cub. It keeps its body warm by storing heat in its fluffy fur.",
+  "baseStats": {
+    "hp": 45,
+    "attack": 60,
+    "defense": 40,
+    "specialAttack": 70,
+    "specialDefense": 50,
+    "speed": 45
+  },
+  "abilities": ["ember", "scratch", "growl", "fire-fang", "flamethrower"],
+  "abilityLevels": {
+    "ember": 1,
+    "scratch": 1,
+    "growl": 5,
+    "fire-fang": 12,
+    "flamethrower": 20
+  },
+  "evolution": {
+    "evolvesTo": "monster-002",
+    "level": 16,
+    "item": null,
+    "condition": null
+  },
+  "catchRate": 45,
+  "expYield": 62,
+  "growthRate": "medium",
+  "shape": {
+    "form": "circle",
+    "mainColor": 14423100,
+    "accentColor": 16729344
+  }
+}

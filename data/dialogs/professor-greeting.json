@@ -1,0 +1,81 @@
+{
+  "id": "professor-greeting",
+  "name": "Professor's Greeting",
+  "nodes": [
+    {
+      "speaker": "Professor",
+      "text": "Hello there! Welcome to the world of MonsterQuest. My name is Professor Oak. People call me the Monster Professor!"
+    },
+    {
+      "speaker": "Professor",
+      "text": "This world is inhabited by creatures called Monsters. For some people, Monsters are pets. Others use them for battles."
+    },
+    {
+      "speaker": "Professor",
+      "text": "Myself... I study Monsters as a profession. First, what is your name?",
+      "choices": [
+        {
+          "text": "My name is Red",
+          "nextNode": 3
+        },
+        {
+          "text": "I'm Ash",
+          "nextNode": 4
+        },
+        {
+          "text": "Call me Blue",
+          "nextNode": 5
+        }
+      ]
+    },
+    {
+      "speaker": "Professor",
+      "text": "Right! So your name is Red!",
+      "nextNode": 6
+    },
+    {
+      "speaker": "Professor",
+      "text": "Ah! So your name is Ash!",
+      "nextNode": 6
+    },
+    {
+      "speaker": "Professor",
+      "text": "OK! So your name is Blue!",
+      "nextNode": 6
+    },
+    {
+      "speaker": "Professor",
+      "text": "Your very own Monster legend is about to unfold! A world of dreams and adventures with Monsters awaits! Let's go!"
+    },
+    {
+      "speaker": "Professor",
+      "text": "Here, you can choose your first Monster companion. Choose wisely, as this Monster will be your partner on your journey!",
+      "choices": [
+        {
+          "text": "Choose Embercub (Fire type)",
+          "nextNode": 8
+        },
+        {
+          "text": "Choose Bubblefin (Water type)",
+          "nextNode": 9
+        },
+        {
+          "text": "I need more time to decide",
+          "nextNode": 10
+        }
+      ]
+    },
+    {
+      "speaker": "Professor",
+      "text": "Embercub, an excellent choice! This Fire-type Monster is brave and loyal. Take good care of it!"
+    },
+    {
+      "speaker": "Professor",
+      "text": "Bubblefin, a wonderful choice! This Water-type Monster is gentle and strong. Treat it well!"
+    },
+    {
+      "speaker": "Professor",
+      "text": "No rush, take your time. This is an important decision. Come back when you're ready to choose."
+    }
+  ]
+}
