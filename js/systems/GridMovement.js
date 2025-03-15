@@ -260,9 +260,16 @@ class GridMovement {
         const pixelX = newX * this._tileSize + this._tileSize / 2;
         const pixelY = newY * this._tileSize + this._tileSize / 2;
 
+        // Make sure we're targeting the correct object for tweening
+        const target = entity.sprite;
+
+        if (!target) {
+            return;
+        }
+
         // Tween to new position
         this._scene.tweens.add({
-            targets: entity.sprite,
+            targets: target,
             x: pixelX,
             y: pixelY,
             duration: 200,

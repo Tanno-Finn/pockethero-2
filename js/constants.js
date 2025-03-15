@@ -152,11 +152,11 @@ const COLORS = {
 
     // Tile colors
     TILE: {
-        FLOOR: 0xffffff,
-        WALL: 0x2c3e50,
-        GRASS: 0x2ecc71,
-        WATER: 0x3498db,
-        DOOR: 0x8b4513
+        FLOOR: 0xeeeeee,   // Light gray
+        WALL: 0x2c3e50,    // Dark blue/gray
+        GRASS: 0x2ecc71,   // Green
+        WATER: 0x3498db,   // Blue
+        DOOR: 0x8b4513     // Brown
     },
 
     // UI colors

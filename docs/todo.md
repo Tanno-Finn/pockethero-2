@@ -45,6 +45,18 @@
   - Acceptance Criteria: Player can talk to NPCs with multi-node dialogs
   - Completed: 2025-03-15
 
+- [X] **Enhance visual representation of game world** (Priority: High, Complexity: Moderate)
+  - Description: Improve the visual appearance of the map and NPCs
+  - Dependencies: World Scene
+  - Acceptance Criteria: Map has distinct visual elements, NPCs are visible and recognizable
+  - Completed: 2025-03-16
+
+- [X] **Implement NPC movement patterns** (Priority: Medium, Complexity: Moderate)
+  - Description: Add basic movement behaviors for NPCs (random, patrol)
+  - Dependencies: World Scene, Grid Movement System
+  - Acceptance Criteria: NPCs can move around the map with different patterns
+  - Completed: 2025-03-16
+
 ### Battle System
 - [X] **Implement monster system** (Priority: High, Complexity: Complex)
   - Description: Create system for monster data, stats, and abilities
@@ -92,6 +104,11 @@
 ## Backlog
 
 ### Core Features
+- [ ] **Enhance battle animations** (Priority: Medium, Complexity: Moderate)
+  - Description: Add more visual feedback and animations to battle scenes
+  - Dependencies: Battle Scene
+  - Acceptance Criteria: Battles have intuitive and engaging visual feedback
+
 - [ ] **Implement inventory system** (Priority: Medium, Complexity: Moderate)
   - Description: Create system for items and inventory management
   - Dependencies: Data Management System
@@ -128,11 +145,6 @@
   - Description: Implement game state persistence
   - Dependencies: Core Engine
   - Acceptance Criteria: Player progress can be saved and loaded
-
-- [ ] **Improve battle animations** (Priority: Low, Complexity: Moderate)
-  - Description: Enhance visual feedback during battles
-  - Dependencies: Battle Scene
-  - Acceptance Criteria: Battles have more dynamic and informative animations
 
 - [ ] **Add sound effects and music** (Priority: Low, Complexity: Simple)
   - Description: Include audio feedback for actions

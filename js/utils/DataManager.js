@@ -101,19 +101,43 @@ class DataManager {
                     const indexData = this._scene.cache.json.get(`${type}-index`);
 
                     if (!indexData || !indexData.entries) {
-                        throw new Error(`Invalid index file for ${type}`);
+                        console.warn(`No entries found in index file for ${type}, continuing with empty data`);
+                        // Initialize with empty entries instead of failing
+                        this._cache[type] = {};
+                        resolve();
+                        return;
                     }
 
                     // Load each entry in index
+                    if (indexData.entries.length === 0) {
+                        // No entries to load, resolve immediately
+                        resolve();
+                        return;
+                    }
+
                     const entryPromises = indexData.entries.map(entry =>
                         this._loadDataEntry(type, entry)
                     );
 
                     Promise.all(entryPromises)
                         .then(() => resolve())
-                        .catch(error => reject(error));
+                        .catch(error => {
+                            console.warn(`Error loading entries for ${type}, continuing with partial data`, error);
+                            resolve(); // Resolve anyway to continue loading other types
+                        });
                 } catch (error) {
-                    reject(error);
+                    console.warn(`Error processing index file for ${type}, continuing with empty data`, error);
+                    this._cache[type] = {};
+                    resolve(); // Resolve anyway to continue loading other types
+                }
+            });
+
+            // Add error handler for missing files
+            this._scene.load.once('loaderror', (fileObj) => {
+                if (fileObj.key === `${type}-index`) {
+                    console.warn(`Index file for ${type} not found, continuing with empty data`);
+                    this._cache[type] = {};
+                    resolve(); // Resolve anyway to continue loading other types
                 }
             });
 
